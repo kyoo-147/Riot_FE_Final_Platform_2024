@@ -7,6 +7,7 @@
 * Đầu tiên, người dùng cần tải xuống thư mục source code của giao diện Riot Redesign được cung cấp bởi NaVin Tech. Bạn có thể tải xuống từ Google Drive hoặc GitHub, hoặc liên hệ với Bộ Phận Dịch Vụ Hỗ Trợ của chúng tôi để nhận được hỗ trợ.
 * Sau khi tải xuống, hãy giải nén file dự án.
 * Để chạy dự án trên thiết bị hoặc máy tính, bạn cần cài đặt các môi trường cần thiết, khuyến nghị sử dụng hệ điều hành Windows 10/11 hoặc Ubuntu mới nhất để đảm bảo tính tương thích và hiệu suất tối ưu.
+* Chúng tôi khuyến khích các bạn tải về và chạy server bằng GoLive hoặc Ngrok để các gói dữ liệu được truyền đi chính xác nhất
 
 ## Tổng quan
 Giao diện Riot mới là bước đột phá trong việc cải thiện trải nghiệm người dùng, tập trung vào tính linh hoạt, đơn giản và hiệu quả. Giao diện được thiết kế để dễ dàng sử dụng với cả người mới và người dùng chuyên nghiệp.
