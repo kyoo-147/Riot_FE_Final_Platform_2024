@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Riot Games</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-container">
+            <!-- <img src="photo/logoriotgame.png" alt="Logo 1" class="logo" width="auto" height="70"> -->
+            <!-- <img src="photo/logoriotgame2.png" alt="Logo 2" class="logo" width="auto" height="30"> -->
+
+            <a href="../index.html">
+                <img src="photo/logoriotgame.png" alt="Logo 1" class="logo" width="auto" height="70">
+            </a>
+            
+            <a href="../index.html">
+                <img src="photo/logoriotgame2.png" alt="Logo 2" class="logo" width="auto" height="30">
+            </a>
+        </div>
+        
+        <nav class="menu">
+            <a href="#">TRÒ CHƠI</a>
+            <a href="#">TƯỚNG</a>
+            <a href="#">TIN TỨC</a>
+            <a href="#">CHI TIẾT CẬP NHẬT</a>
+            <a href="#">ESPORTS</a>
+            <a href="#">VŨ TRỤ</a>
+            <a href="#">HỖ TRỢ</a>
+        </nav>
+        
+        <div class="right-section">
+            <img src="photo/seachicon.png" alt="Search" class="icon search-icon" width="auto" height="20">
+            <img src="photo/globeicon.png" alt="Language" class="icon globe-icon" width="auto" height="20">
+            <button class="play-now-btn">CHƠI NGAY</button>
+        </div>
+        
+        <div class="menu-icon">☰</div> 
+    </header>
+
+    <main class="content">
+        <h2>CHỌN NGAY MỘT</h2>
+        <h1>TƯỚNG</h1>
+        <p>
+            Với hơn 140 tướng, bạn chắc chắn sẽ tìm thấy một lựa chọn phù hợp với lối chơi của mình. Chọn<br>
+            một tướng tủ hoặc sử dụng điêu luyện tất cả.
+        </p>
+        
+        <div class="champion-gallery" id="champions">
+        </div>
+    </main>
+
+    <!-- <div class="champion-gallery" id="champions">
+        <div class="champion-option">
+            <a href="../agent_pick/aatrox.html">
+                <img src="photo/AATROX.webp" alt="AATROX" width="100" height="100">
+                <p>AATROX</p>
+            </a>
+        </div><div class="champion-option">
+                <img src="photo/AHRI.webp" alt="AHRI" width="100" height="100">
+                <p>AHRI</p>
+            </div><div class="champion-option">
+                <img src="photo/AKALI.webp" alt="AKALI" width="100" height="100">
+                <p>AKALI</p>
+            </div><div class="champion-option">
+                <img src="photo/AKSHAN.webp" alt="AKSHAN" width="100" height="100">
+                <p>AKSHAN</p>
+            </div><div class="champion-option">
+                <img src="photo/ALISTAR.webp" alt="ALISTAR" width="100" height="100">
+                <p>ALISTAR</p>
+            </div><div class="champion-option">
+                <img src="photo/AMUMU.webp" alt="AMUMU" width="100" height="100">
+                <p>AMUMU</p>
+            </div><div class="champion-option">
+                <img src="photo/ANNIE.webp" alt="ANNIE" width="100" height="100">
+                <p>ANNIE</p>
+            </div><div class="champion-option">
+                <img src="photo/ASHE.webp" alt="ASHE" width="100" height="100">
+                <p>ASHE</p>
+            </div><div class="champion-option">
+                <img src="photo/AURELION_SOL.webp" alt="AURELION_SOL" width="100" height="100">
+                <p>AURELION_SOL</p>
+            </div><div class="champion-option">
+                <img src="photo/BARD.webp" alt="BARD" width="100" height="100">
+                <p>BARD</p>
+            </div><div class="champion-option">
+                <img src="photo/BELVETH.webp" alt="BELVETH" width="100" height="100">
+                <p>BELVETH</p>
+            </div><div class="champion-option">
+                <img src="photo/BLITZCRANK.webp" alt="BLITZCRANK" width="100" height="100">
+                <p>BLITZCRANK</p>
+            </div><div class="champion-option">
+                <img src="photo/BRAND.webp" alt="BRAND" width="100" height="100">
+                <p>BRAND</p>
+            </div><div class="champion-option">
+                <img src="photo/BRAUM.webp" alt="BRAUM" width="100" height="100">
+                <p>BRAUM</p>
+            </div><div class="champion-option">
+                <img src="photo/CAITLYN.webp" alt="CAITLYN" width="100" height="100">
+                <p>CAITLYN</p>
+            </div><div class="champion-option">
+                <img src="photo/CAMILLE.webp" alt="CAMILLE" width="100" height="100">
+                <p>CAMILLE</p>
+            </div><div class="champion-option">
+                <img src="photo/CASSIOPEIA.webp" alt="CASSIOPEIA" width="100" height="100">
+                <p>CASSIOPEIA</p>
+            </div><div class="champion-option">
+                <img src="photo/CHO'GATH.webp" alt="CHO'GATH" width="100" height="100">
+                <p>CHO'GATH</p>
+            </div><div class="champion-option">
+                <img src="photo/DARIUS.webp" alt="DARIUS" width="100" height="100">
+                <p>DARIUS</p>
+            </div><div class="champion-option">
+                <img src="photo/DIANA.webp" alt="DIANA" width="100" height="100">
+                <p>DIANA</p>
+            </div><div class="champion-option">
+                <img src="photo/DR. MUNDO.webp" alt="DR. MUNDO" width="100" height="100">
+                <p>DR. MUNDO</p>
+            </div><div class="champion-option">
+                <img src="photo/DRAVEN.webp" alt="DRAVEN" width="100" height="100">
+                <p>DRAVEN</p>
+            </div><div class="champion-option">
+                <img src="photo/EKKO.webp" alt="EKKO" width="100" height="100">
+                <p>EKKO</p>
+            </div><div class="champion-option">
+                <img src="photo/ELISE.webp" alt="ELISE" width="100" height="100">
+                <p>ELISE</p>
+            </div><div class="champion-option">
+                <img src="photo/EVELYNN.webp" alt="EVELYNN" width="100" height="100">
+                <p>EVELYNN</p>
+            </div><div class="champion-option">
+                <img src="photo/FIDDLESTICKS.webp" alt="FIDDLESTICKS" width="100" height="100">
+                <p>FIDDLESTICKS</p>
+            </div><div class="champion-option">
+                <img src="photo/FIORA.webp" alt="FIORA" width="100" height="100">
+                <p>FIORA</p>
+            </div><div class="champion-option">
+                <img src="photo/FIZZ.webp" alt="FIZZ" width="100" height="100">
+                <p>FIZZ</p>
+            </div><div class="champion-option">
+                <img src="photo/GALIO.webp" alt="GALIO" width="100" height="100">
+                <p>GALIO</p>
+            </div><div class="champion-option">
+                <img src="photo/GANGPLANK.webp" alt="GANGPLANK" width="100" height="100">
+                <p>GANGPLANK</p>
+            </div><div class="champion-option">
+                <img src="photo/GAREN.webp" alt="GAREN" width="100" height="100">
+                <p>GAREN</p>
+            </div><div class="champion-option">
+                <img src="photo/GNAR.webp" alt="GNAR" width="100" height="100">
+                <p>GNAR</p>
+            </div><div class="champion-option">
+                <img src="photo/GRAGAS.webp" alt="GRAGAS" width="100" height="100">
+                <p>GRAGAS</p>
+            </div><div class="champion-option">
+                <img src="photo/GRAVES.webp" alt="GRAVES" width="100" height="100">
+                <p>GRAVES</p>
+            </div><div class="champion-option">
+                <img src="photo/GWEN.webp" alt="GWEN" width="100" height="100">
+                <p>GWEN</p>
+            </div><div class="champion-option">
+                <img src="photo/HECARIM.webp" alt="HECARIM" width="100" height="100">
+                <p>HECARIM</p>
+            </div><div class="champion-option">
+                <img src="photo/HEIMERDINGER.webp" alt="HEIMERDINGER" width="100" height="100">
+                <p>HEIMERDINGER</p>
+            </div><div class="champion-option">
+                <img src="photo/ILLAOI.webp" alt="ILLAOI" width="100" height="100">
+                <p>ILLAOI</p>
+            </div><div class="champion-option">
+                <img src="photo/IRELIA.webp" alt="IRELIA" width="100" height="100">
+                <p>IRELIA</p>
+            </div><div class="champion-option">
+                <img src="photo/JAX.webp" alt="JAX" width="100" height="100">
+                <p>JAX</p>
+            </div></div> -->
+
+    <footer>
+        <div class="hotro">
+            <a class="trangchinh" href="https://www.leagueoflegends.com/vi-vn/how-to-play/">về liên minh huyền thoại</a>
+            <a class="trangchinh" href="https://support.riotgames.com/">hỗ trợ</a>
+            <a class="trangchinh" href="https://www.lolesports.com/">trang esports chính</a>
+        </div>
+        <div class="truyenthong">
+            <a href="https://www.facebook.com/LeagueoflegendsVN/">
+                <img src="photo/facebookk.png" class="anh">
+            </a>
+            <a href="https://www.instagram.com/lmhtvietnam/">
+                <img src="photo/instagramm.png" class="anh">
+            </a>
+            <a href="https://www.youtube.com/@lmhtvietnam">
+                <img src="photo/youtubee.png" class="anh">
+            </a>
+        </div>
+        <div class="nhom">
+            <a href="http://www.riotgames.com/">
+                <img src="photo/logoriotgame.png" class="riott">
+            </a>
+            <img src="photo/unggames.png" class="ung">
+        </div>
+        <div class="text">
+            <p>© 2009-2022 bởi Tập Đoàn Riot Games. LIÊN MINH HUYỀN THOẠI và mọi logo liên quan là nhãn hiệu, nhãn hiệu dịch vụ và/hoặc nhãn hiệu đã đăng ký của Tập Đoàn Riot Games.</p>
+        </div>
+        <div class="baomat">
+            <a class="baomatt" href="https://www.riotgames.com/vi/privacy-notice">chính sách bảo mật</a>
+            <a class="baomatt" href="https://www.riotgames.com/vi/terms-of-service">điều khoản sử dụng (riot)</a>
+            <a class="baomatt">tùy chọn cookies</a>
+        </div>
+        <div class="tuoi">
+            <img src="photo/18+.png">
+        </div>
+    </footer>
+    <div id="champions"></div>
+    <script>
+        const champions = [
+            { name: "AATROX", link: "../agent_pick/aatrox.html" }, // Thay đổi link ở đây
+            { name: "AHRI", link: "link_ahri.html" },
+            { name: "AKALI", link: "link_akali.html" },
+            { name: "AKSHAN", link: "link_akshan.html" },
+            { name: "ALISTAR", link: "link_alistar.html" },
+            { name: "AMUMU", link: "link_amumu.html" },
+            { name: "ANNIE", link: "link_annie.html" },
+            { name: "ASHE", link: "link_ashe.html" },
+            { name: "AURELION_SOL", link: "link_aurelion_sol.html" },
+            { name: "BARD", link: "link_bard.html" },
+            { name: "BELVETH", link: "link_belveth.html" },
+            { name: "BLITZCRANK", link: "link_blitzcrank.html" },
+            { name: "BRAND", link: "link_brand.html" },
+            { name: "BRAUM", link: "link_braum.html" },
+            { name: "CAITLYN", link: "link_caitlyn.html" },
+            { name: "CAMILLE", link: "link_camille.html" },
+            { name: "CASSIOPEIA", link: "link_cassiopeia.html" },
+            { name: "CHO'GATH", link: "link_chogath.html" },
+            { name: "DARIUS", link: "link_darius.html" },
+            { name: "DIANA", link: "link_diana.html" },
+            { name: "DR. MUNDO", link: "link_dr_mundo.html" },
+            { name: "DRAVEN", link: "link_draven.html" },
+            { name: "EKKO", link: "link_ekko.html" },
+            { name: "ELISE", link: "link_elise.html" },
+            { name: "EVELYNN", link: "link_evelynn.html" },
+            { name: "FIDDLESTICKS", link: "link_fiddlesticks.html" },
+            { name: "FIORA", link: "link_fiora.html" },
+            { name: "FIZZ", link: "link_fizz.html" },
+            { name: "GALIO", link: "link_galio.html" },
+            { name: "GANGPLANK", link: "link_gangplank.html" },
+            { name: "GAREN", link: "link_garen.html" },
+            { name: "GNAR", link: "link_gnar.html" },
+            { name: "GRAGAS", link: "link_gragas.html" },
+            { name: "GRAVES", link: "link_graves.html" },
+            { name: "GWEN", link: "link_gwen.html" },
+            { name: "HECARIM", link: "link_hecarim.html" },
+            { name: "HEIMERDINGER", link: "link_heimerdinger.html" },
+            { name: "ILLAOI", link: "link_illaoi.html" },
+            { name: "IRELIA", link: "link_irelia.html" },
+            { name: "JAX", link: "link_jax.html" }
+        ];
+    
+        const championsContainer = document.getElementById('champions');
+    
+        champions.forEach(champion => {
+            const championDiv = document.createElement('div');
+            championDiv.classList.add('champion-option');
+            championDiv.innerHTML = `
+                <a href="${champion.link}">
+                    <img src="photo/${champion.name}.webp" alt="${champion.name}" width="100" height="100">
+                    <p>${champion.name}</p>
+                </a>
+            `;
+            championsContainer.appendChild(championDiv);
+        });
+    
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuIcon = document.querySelector('.menu-icon');
+            const menu = document.querySelector('.menu');
+    
+            menuIcon.addEventListener('click', function () {
+                menu.classList.toggle('active'); // Thêm hoặc xóa class 'active' khi nhấp nút ba gạch
+            });
+        });
+    </script>
+</body>
+</html>

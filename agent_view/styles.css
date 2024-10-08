@@ -1,0 +1,418 @@
+/* Đặt lại các giá trị mặc định */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Thay đổi chung cho body */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    background-color: #fff;
+    color: #111;
+    margin-top: 80px; /* Đảm bảo nội dung không bị che bởi thanh menu */
+
+}
+/* Thanh điều hướng */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background-color: #111;
+    padding: 10px 20px;
+    color: #fff;
+    z-index: 1000;
+    height: 80px;
+    border-bottom: 2px solid rgba(51, 51, 51, .25);
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 13px; 
+}
+
+
+.logo {
+    
+    transition: filter 0.1s;
+}
+
+
+.logo:hover {
+    filter: brightness(0) saturate(100%) invert(17%) sepia(94%) saturate(1970%) hue-rotate(357deg) brightness(105%) contrast(101%);
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    gap: 20px;
+
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 10px;
+    position: relative;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+/* Hiệu ứng hover cho các mục menu */
+.menu a:hover {
+    color: #FFD700;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.menu a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3.5px;
+    background-color: #008CBA;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+/* Phần bên phải của menu */
+.right-section {
+    display: flex;
+    align-items: center;
+    margin-left:360px ;
+    gap: 15px;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+/* Nút "Chơi Ngay" */
+.play-now-btn {
+    text-align: center;
+    background: rgb(11, 196, 226);
+    line-height: 16px;
+    position: relative;
+    z-index: 0;
+    text-overflow: ellipsis;
+    height: 32px;
+    border-radius: 12px;
+    padding: 8px 16px;
+    color: #111; 
+    border: #111 solid 1px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: .08em;
+    display: flex; /* Sử dụng flexbox */
+    justify-content: flex-end; /* Căn chỉnh nút qua bên phải */
+    
+    
+
+}
+
+
+.play-now-btn:hover {
+    background-color: #0077b3;
+}
+
+/* Nội dung chính */
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 70px;
+    color: rgb(10, 20, 40);
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Beaufort for LOL", sans-serif;
+    margin-bottom: 20px;
+    padding-bottom: var(--spacer-variable-sm);
+   
+  
+}
+
+.content h2 {
+    font-size: 1.3em;
+    color: rgb(10, 20, 40);
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.content p {
+    
+    font-family: Spiegel, sans-serif;
+    font-weight: 400;
+    word-break: break-word;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgb(10, 20, 40);
+}
+
+/* Hiển thị tướng */
+.champion-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .champion-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .champion-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .champion-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+.champion-option {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgb(10, 20, 40);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.champion-option img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.champion-option:hover img {
+    transform: scale(1.05);
+}
+
+.champion-option p {
+    margin: 0;
+    padding: 0 5px;
+    background-color: rgb(10, 20, 40);
+    color: white;
+    text-align: left;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 43px;
+    line-height: 43px;
+    position: relative;
+}
+
+/* Khung hiển thị thông tin */
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #292929;
+    padding: 24px;
+    color: #7e7e7e;
+    font-family: "FF Mark W05", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: .08em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0;
+    border: 1px solid #444;
+    border-radius: 10px;
+}
+
+.info-item {
+    flex: 1;
+    padding: 10px;
+}
+
+/**footer**/
+footer {
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa các phần tử theo chiều ngang */
+    justify-content: center; /* Căn giữa các phần tử theo chiều dọc */
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .hotro, .nhom, .baomat, .text {
+        flex-direction: column; 
+        align-items: center;
+    }
+}
+.hotro{
+    display: flex;
+    background-color: rgb(43, 39, 39);
+    width:100%;
+    justify-content: center; /* Căn giữa các phần tử bên trong */
+    align-items: center;
+    gap:20px;
+    padding:10px;
+}
+.trangchinh{
+    text-transform: uppercase; /* In hoa chữ */
+    font-size: 16px;
+    color:white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding:10px;
+}
+.trangchinh:hover{
+    text-decoration: none;
+    background-color: rgb(68, 62, 62);
+}
+.truyenthong {    
+    display: flex;
+    justify-content: center; /* Căn giữa các phần tử bên trong */
+    align-items: center;
+    gap: 20px; /* Khoảng cách giữa các mục */
+    margin: 30px 0; /* Khoảng cách trên và dưới 30px */
+}
+.anh{
+    width:32px;
+    height:32px;
+    background-color: rgb(255, 255, 255);
+    border:3px solid rgb(82, 76, 76);
+    border-radius: 40%;
+}
+.nhom{
+    display:flex;
+    gap:20px;
+}
+.riott {
+    height: 100px; /* Điều chỉnh kích thước logo */
+    width:130px;
+    filter: grayscale(100%) brightness(45%) sepia(10%) hue-rotate(0deg) saturate(0%); /* Chuyển hình ảnh thành màu vàng */
+    transition: filter 0.3s ease, transform 0.3s ease; /* Hiệu ứng mượt khi chuyển đổi */
+}
+.riott:hover{
+    filter: brightness(0) invert(1);
+}
+.ung{
+    height:19px;
+    width:116px;
+    margin-top: 50px;
+}
+.text {
+    font-size: 16px;
+    color: #7e7e7e;
+    text-align: center;
+    max-width: 700px;
+    margin:5px;
+}
+.baomat {
+    display: flex;
+    justify-content: center; /* Căn giữa các phần tử bên trong */
+    gap: 30px; /* Khoảng cách giữa các mục */
+    text-transform: uppercase; /* In hoa chữ */
+    margin:5px;
+}
+.baomatt{
+    position: relative;
+    color:white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    padding:10px;
+    cursor: pointer; /* Thay đổi con trỏ thành con trỏ nhấp chuột */
+}
+.baomatt:hover{
+    background-color: #242323;
+    text-decoration: none;
+}
+.tuoi{
+    margin-bottom: 30px;
+    border:10px solid rgb(41, 38, 38);
+    border-radius: 5px;
+}
+
+/* Media Queries cho menu */
+@media (max-width: 1310px) {
+    /* Ẩn menu chính */
+    .menu {
+        display: none; 
+    }
+
+    /* Chỉnh logo-container để logo nằm bên trái */
+    .logo-container {
+        display: flex;
+        justify-content: flex-start; /* Đặt các logo bên trái */
+        align-items: center;
+    }
+
+    /* Đảm bảo rằng 2 logo nằm cạnh nhau */
+    .logo-container img {
+        margin-right: 10px; /* Khoảng cách giữa 2 logo */
+    }
+
+    /* Hiện nút ba gạch và đặt nó bên phải */
+    .menu-icon {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+        position: absolute;
+        right: 20px; /* Đặt nút ba gạch bên phải */
+        top: 15px;
+    }
+
+    /* Ẩn phần bên phải của menu */
+    .right-section {
+        display: none;
+    }
+
+    /* Hiển thị menu khi nhấp vào nút ba gạch */
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        background-color: #111;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        z-index: 999;
+    }
+}
+@media (min-width: 1310px) {
+    .menu {
+        display: flex; /* Hiện menu trên màn hình lớn */
+    }
+
+    .menu-icon {
+        display: none; /* Ẩn nút ba gạch trên màn hình lớn */
+    }
+
+    .right-section {
+        display: flex; /* Hiện phần bên phải của menu */
+    }
+}
+
+
+.champion-option a {
+    text-decoration: none; /* Xóa đường gạch chân */
+    color: inherit; /* Giữ màu chữ giống như phần còn lại của trang */
+}
